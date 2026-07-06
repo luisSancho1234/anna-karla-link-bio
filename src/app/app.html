@@ -1,4 +1,4 @@
-<div class="relative min-h-screen overflow-hidden bg-[#2d2d2d]">
+<div class="relative h-dvh overflow-hidden">
   <!-- Fundo -->
   <img
     src="assets/img/bg-image.webp"
@@ -7,11 +7,11 @@
 
   <!-- Conteúdo -->
   <div class="relative z-10 py-8">
-    <img class="mx-auto w-full max-w-82 sm:max-w-86" src="assets/img/photo-frame.webp" />
-    <img class="mx-auto w-full max-w-90 sm:max-w-96" src="assets/img/title.webp" />
+    <img class="mx-auto w-full max-w-70 sm:max-w-86" src="assets/img/photo-frame.webp" />
+    <img class="mx-auto w-full max-w-80 sm:max-w-96" src="assets/img/title.webp" />
   </div>
 
-  <div class="flex w-full justify-center items-center mt-2 gap-4">
+  <div class="flex w-full justify-center items-center mt-2 gap-2">
     @for (item of links; track item.image) {
       <a [href]="item.url" target="_blank" class="relative group">
         <!-- Glow -->
@@ -27,9 +27,8 @@
     }
   </div>
   <div class="flex mt-6 gap-3 items-center justify-center">
-    <img class="w-8 mb-1" src="assets/img/touch-icon.webp" />
-    <p class="text-white text-xl font-semibold">TOQUE PARA ENTRAR EM CONTATO</p>
+    <img class="w-6 sm:w-8 mb-1" src="assets/img/touch-icon.webp" />
+    <p class="text-white sm:text-xl text-md font-semibold">TOQUE PARA ENTRAR EM CONTATO</p>
   </div>
-
   <img class="absolute bottom-0 left-0 w-full max-h-5 z-10" src="assets/img/footer.webp" />
 </div>
